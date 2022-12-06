@@ -227,7 +227,7 @@ btnConfirm.addEventListener("click", (e) => {
     completeState.style.display = "flex";
   } else {
     alert(
-      "Please fill all the inputs field first and make sure all datas is correct!"
+      "Please fill all the inputs field and make sure all datas information of the card is correct!"
     );
   }
 });
