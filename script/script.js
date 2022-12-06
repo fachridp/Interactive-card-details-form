@@ -164,13 +164,15 @@ inputExpYear.addEventListener("input", (e) => {
     pExpYear.innerText = `${e.target.dataset.default}`;
     msgExpMonthEmpty.style.display = "block";
     msgLtCurrentYear.style.display = "none";
+msgExpMonthEmpty.style.marginBlock = "1.2rem";
   } else {
     msgExpMonthEmpty.style.display = "none";
 
     if (e.target.value.length === 2) {
-      if (e.target.value < e.target.dataset.minmonth) {
+      if (e.target.value < e.target.dataset.minyear) {
+inputExpMonth.style.display = "relative"
         msgLtCurrentYear.style.display = "block";
-        msgLtCurrentYear.style.top = "5.2rem";
+        msgLtCurrentYear.style.marginBlock = "1.2rem";
         btnConfirm.style.marginBlock = "2rem";
       } else {
         btnConfirm.style.marginBlock = ".558rem";
